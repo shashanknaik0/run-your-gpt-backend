@@ -1,6 +1,6 @@
 import json
 from django.http import HttpResponse
-from django.contrib.auth import authenticate,login
+from django.contrib.auth import authenticate,login,logout
 from django.contrib.auth.models import User
 
 # Create your views here.
@@ -36,3 +36,7 @@ def Login(req):
             return HttpResponse("login success")
         else:
             return HttpResponse("login failed", status=401)
+
+def Logout(req):
+    logout(req)
+    return HttpResponse("logout success")
