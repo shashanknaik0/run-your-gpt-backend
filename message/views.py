@@ -23,3 +23,10 @@ def message(request):
         newMessage = Message(user_id = user ,user_input=user_input,response=response)
         newMessage.save()
         return HttpResponse("saved cart")
+
+@login_required
+def messageCount(request):
+    if request.method == "GET":
+        userId = request.user.id
+        count = Message.objects.all().filter(user_id = userId).count()
+        return HttpResponse(count)

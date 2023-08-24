@@ -3,4 +3,5 @@ from . import views
 
 urlpatterns = [
     path('',views.message),
+    path('count',views.messageCount),
 ]
