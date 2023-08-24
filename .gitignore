@@ -1,0 +1,14 @@
+.vscode
+
+#env var
+.env
+
+# virtual env
+/venv
+
+#cache
+__pycache__
+*.pyc
+
+#migrations
+migrations
