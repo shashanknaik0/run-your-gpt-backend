@@ -1,4 +1,4 @@
-# microblog - Instructions for setting up and running the application
+# run-your-gpt- Instructions for setting up and running the application
 <hr>
 <h2>Clone the repo</h2>
 
@@ -47,7 +47,7 @@ step 3: run the server
 python manage.py runserver
 </pre>
 
-step 4: development server will be running  in http://127.0.0.1:8000 
+step 4: development server will be running  at http://127.0.0.1:8000 
 <pre>
 /admin - this is built in functionaity in django admin site.
 /signup - (POST) Add a new user to the platform. The user details will include fields like username, email, and password. 
