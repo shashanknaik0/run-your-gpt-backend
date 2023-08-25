@@ -10,10 +10,10 @@ def Signup(req):
         fname = data["fname"]
         lname = data["lname"]
         uname = data["uname"]
-        pwd = data["pwd"]
+        password = data["pwd"]
         email = data["email"]
         
-        myuser = User(username=uname,email=email,password=pwd)
+        myuser = User.objects.create_user(username=uname,email=email,password=password)
         myuser.first_name = fname
         myuser.last_name = lname
 
